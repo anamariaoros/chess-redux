@@ -5,7 +5,7 @@ const sampleDom = `<!DOCTYPE html>
 <head>
 </head>
 <body>
-    <div class="custom-slider-container">
+    <div class="main">
     </div>
 </body>
 </html>`;

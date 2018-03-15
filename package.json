@@ -1,10 +1,11 @@
 {
-  "name": "webpack-example",
+  "name": "webpack-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "build": "webpack --mode development --progress",
+    "start": "webpack-dev-server --mode development --content-base dist --progress --colors --inline",
     "test": "mocha --require babel-register ./tests"
   },
   "author": "",
@@ -20,8 +21,13 @@
     "eslint": "^4.9.0",
     "eslint-config-fortech": "^2.0.1",
     "eslint-plugin-import": "^2.8.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "jsdom": "^11.3.0",
     "mocha": "^4.0.1",
-    "style-loader": "^0.19.0"
+    "style-loader": "^0.19.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
   }
 }
